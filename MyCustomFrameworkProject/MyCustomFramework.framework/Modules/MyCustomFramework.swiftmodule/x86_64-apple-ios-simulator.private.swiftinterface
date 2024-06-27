@@ -1,0 +1,17 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios17.4-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-bare-slash-regex -module-name MyCustomFramework
+@_exported import MyCustomFramework
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CustomView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) public func setBackgroundColor(to color: UIKit.UIColor)
+  @_Concurrency.MainActor(unsafe) public func setBorderWidth(to width: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) public func setBorderColor(to color: UIKit.UIColor)
+  @_Concurrency.MainActor(unsafe) public func setCornerRadius(to radius: CoreFoundation.CGFloat)
+  @objc deinit
+}
