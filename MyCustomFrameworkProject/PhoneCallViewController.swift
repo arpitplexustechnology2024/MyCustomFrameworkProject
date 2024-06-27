@@ -8,22 +8,33 @@
 import UIKit
 
 class PhoneCallViewController: UIViewController {
+    
+    fileprivate let application = UIApplication.shared
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func btnSetting(_ sender: UIButton) {
+        if let settingURL = URL(string: UIApplication.openSettingsURLString) {
+                application.open(settingURL, options: [:]) { _ in
+                    // action
+            }
+        }
     }
-    */
-
+    
+    @IBAction func btnPhoneCall(_ sender: UIButton) {
+        if let phoneURL = URL(string: "tel://7874718104") {
+           if application.canOpenURL(phoneURL) {
+               application.open(phoneURL, options: [:], completionHandler: nil)
+           } else {
+               let alert = UIAlertController(title: "Error!", message: "Real Device to application run.!", preferredStyle: .alert)
+               let alertAction = UIAlertAction(title: "Ok", style: .default)
+               alert.addAction(alertAction)
+               present(alert, animated: true)
+           }
+        }
+    }
+    
 }

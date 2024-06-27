@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD16FC7D2C2DD104005CE769 /* MyCustomFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD21B83C2C2DCE7D00DCAD03 /* MyCustomFramework.framework */; };
+		BD16FC7E2C2DD104005CE769 /* MyCustomFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BD21B83C2C2DCE7D00DCAD03 /* MyCustomFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BD16FC812C2DD7AC005CE769 /* PhoneCallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD16FC802C2DD7AC005CE769 /* PhoneCallViewController.swift */; };
+		BD16FC852C2DEC7D005CE769 /* DetectDeviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD16FC842C2DEC7D005CE769 /* DetectDeviesViewController.swift */; };
 		BD21B80D2C2DCE1200DCAD03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD21B80C2C2DCE1200DCAD03 /* AppDelegate.swift */; };
 		BD21B80F2C2DCE1200DCAD03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD21B80E2C2DCE1200DCAD03 /* SceneDelegate.swift */; };
 		BD21B8112C2DCE1200DCAD03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD21B8102C2DCE1200DCAD03 /* ViewController.swift */; };
@@ -35,7 +39,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BD16FC7F2C2DD104005CE769 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BD16FC7E2C2DD104005CE769 /* MyCustomFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		BD16FC802C2DD7AC005CE769 /* PhoneCallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneCallViewController.swift; sourceTree = "<group>"; };
+		BD16FC842C2DEC7D005CE769 /* DetectDeviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectDeviesViewController.swift; sourceTree = "<group>"; };
 		BD21B8092C2DCE1200DCAD03 /* MyCustomFrameworkProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCustomFrameworkProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD21B80C2C2DCE1200DCAD03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD21B80E2C2DCE1200DCAD03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +69,7 @@
 		BD21B8292C2DCE1300DCAD03 /* MyCustomFrameworkProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCustomFrameworkProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD21B82D2C2DCE1300DCAD03 /* MyCustomFrameworkProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomFrameworkProjectUITests.swift; sourceTree = "<group>"; };
 		BD21B82F2C2DCE1300DCAD03 /* MyCustomFrameworkProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomFrameworkProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BD21B83C2C2DCE7D00DCAD03 /* MyCustomFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyCustomFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD16FC7D2C2DD104005CE769 /* MyCustomFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,9 +121,12 @@
 		BD21B80B2C2DCE1200DCAD03 /* MyCustomFrameworkProject */ = {
 			isa = PBXGroup;
 			children = (
+				BD21B83C2C2DCE7D00DCAD03 /* MyCustomFramework.framework */,
 				BD21B80C2C2DCE1200DCAD03 /* AppDelegate.swift */,
 				BD21B80E2C2DCE1200DCAD03 /* SceneDelegate.swift */,
 				BD21B8102C2DCE1200DCAD03 /* ViewController.swift */,
+				BD16FC802C2DD7AC005CE769 /* PhoneCallViewController.swift */,
+				BD16FC842C2DEC7D005CE769 /* DetectDeviesViewController.swift */,
 				BD21B8122C2DCE1200DCAD03 /* Main.storyboard */,
 				BD21B8152C2DCE1300DCAD03 /* Assets.xcassets */,
 				BD21B8172C2DCE1300DCAD03 /* LaunchScreen.storyboard */,
@@ -137,6 +162,7 @@
 				BD21B8052C2DCE1200DCAD03 /* Sources */,
 				BD21B8062C2DCE1200DCAD03 /* Frameworks */,
 				BD21B8072C2DCE1200DCAD03 /* Resources */,
+				BD16FC7F2C2DD104005CE769 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,6 +285,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD21B8112C2DCE1200DCAD03 /* ViewController.swift in Sources */,
+				BD16FC812C2DD7AC005CE769 /* PhoneCallViewController.swift in Sources */,
+				BD16FC852C2DEC7D005CE769 /* DetectDeviesViewController.swift in Sources */,
 				BD21B80D2C2DCE1200DCAD03 /* AppDelegate.swift in Sources */,
 				BD21B80F2C2DCE1200DCAD03 /* SceneDelegate.swift in Sources */,
 			);
@@ -442,6 +470,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyCustomFrameworkProject",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyCustomFrameworkProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -469,6 +501,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyCustomFrameworkProject",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyCustomFrameworkProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
