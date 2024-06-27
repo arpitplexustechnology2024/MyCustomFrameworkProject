@@ -20,6 +20,7 @@
 		BD21B8242C2DCE1300DCAD03 /* MyCustomFrameworkProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD21B8232C2DCE1300DCAD03 /* MyCustomFrameworkProjectTests.swift */; };
 		BD21B82E2C2DCE1300DCAD03 /* MyCustomFrameworkProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD21B82D2C2DCE1300DCAD03 /* MyCustomFrameworkProjectUITests.swift */; };
 		BD21B8302C2DCE1300DCAD03 /* MyCustomFrameworkProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD21B82F2C2DCE1300DCAD03 /* MyCustomFrameworkProjectUITestsLaunchTests.swift */; };
+		BD56A96F2C2E27F60041131C /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD56A96E2C2E27F60041131C /* WebViewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		BD21B82D2C2DCE1300DCAD03 /* MyCustomFrameworkProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomFrameworkProjectUITests.swift; sourceTree = "<group>"; };
 		BD21B82F2C2DCE1300DCAD03 /* MyCustomFrameworkProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomFrameworkProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BD21B83C2C2DCE7D00DCAD03 /* MyCustomFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyCustomFramework.framework; sourceTree = "<group>"; };
+		BD56A96E2C2E27F60041131C /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				BD16FC802C2DD7AC005CE769 /* PhoneCallViewController.swift */,
 				BD16FC842C2DEC7D005CE769 /* DetectDeviesViewController.swift */,
 				BD21B8122C2DCE1200DCAD03 /* Main.storyboard */,
+				BD56A96E2C2E27F60041131C /* WebViewViewController.swift */,
 				BD21B8152C2DCE1300DCAD03 /* Assets.xcassets */,
 				BD21B8172C2DCE1300DCAD03 /* LaunchScreen.storyboard */,
 				BD21B81A2C2DCE1300DCAD03 /* Info.plist */,
@@ -288,6 +291,7 @@
 				BD16FC812C2DD7AC005CE769 /* PhoneCallViewController.swift in Sources */,
 				BD16FC852C2DEC7D005CE769 /* DetectDeviesViewController.swift in Sources */,
 				BD21B80D2C2DCE1200DCAD03 /* AppDelegate.swift in Sources */,
+				BD56A96F2C2E27F60041131C /* WebViewViewController.swift in Sources */,
 				BD21B80F2C2DCE1200DCAD03 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
