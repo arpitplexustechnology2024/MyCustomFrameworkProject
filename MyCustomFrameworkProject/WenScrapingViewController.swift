@@ -6,24 +6,69 @@
 //
 
 import UIKit
+import SwiftSoup
 
 class WenScrapingViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    @IBOutlet weak var bodyTextView: UITextView!
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        loadData()
     }
-    */
 
+    func loadData() {
+        fetchHTML(from: "https://www.wikipedia.org") { htmlString in
+            guard let htmlString = htmlString else {
+                self.updateUI(title: "Failed to fetch HTML", body: "")
+                return
+            }
+
+            self.parseHTML(html: htmlString)
+        }
+    }
+
+    func fetchHTML(from urlString: String, completion: @escaping (String?) -> Void) {
+        guard let url = URL(string: urlString) else {
+            completion(nil)
+            return
+        }
+
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            guard let data = data, error == nil else {
+                completion(nil)
+                return
+            }
+
+            let htmlString = String(data: data, encoding: .utf8)
+            completion(htmlString)
+        }
+
+        task.resume()
+    }
+
+    func parseHTML(html: String) {
+        do {
+            let document = try SwiftSoup.parse(html)
+            let title = try document.title()
+            let body = try document.body()?.text()
+            
+            DispatchQueue.main.async {
+                self.updateUI(title: title, body: body ?? "No body content")
+            }
+        } catch {
+            DispatchQueue.main.async {
+                self.updateUI(title: "Error parsing HTML", body: "\(error)")
+            }
+        }
+    }
+
+    func updateUI(title: String, body: String) {
+        self.titleLabel.text = title
+        self.bodyTextView.text = body
+    }
 }
