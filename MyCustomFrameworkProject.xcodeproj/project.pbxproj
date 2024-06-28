@@ -25,6 +25,8 @@
 		BD21B8302C2DCE1300DCAD03 /* MyCustomFrameworkProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD21B82F2C2DCE1300DCAD03 /* MyCustomFrameworkProjectUITestsLaunchTests.swift */; };
 		BD56A96F2C2E27F60041131C /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD56A96E2C2E27F60041131C /* WebViewViewController.swift */; };
 		BD56A9712C2E2CEA0041131C /* WenScrapingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD56A9702C2E2CEA0041131C /* WenScrapingViewController.swift */; };
+		BD56A9732C2E46010041131C /* ShortCutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD56A9722C2E46010041131C /* ShortCutViewController.swift */; };
+		BD56A9752C2E47FB0041131C /* AddEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD56A9742C2E47FB0041131C /* AddEmployeeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		BD21B83C2C2DCE7D00DCAD03 /* MyCustomFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyCustomFramework.framework; sourceTree = "<group>"; };
 		BD56A96E2C2E27F60041131C /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 		BD56A9702C2E2CEA0041131C /* WenScrapingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WenScrapingViewController.swift; sourceTree = "<group>"; };
+		BD56A9722C2E46010041131C /* ShortCutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortCutViewController.swift; sourceTree = "<group>"; };
+		BD56A9742C2E47FB0041131C /* AddEmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeeViewController.swift; sourceTree = "<group>"; };
 		E84EAE098BC79CFC0A3E7D08 /* Pods-MyCustomFrameworkProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCustomFrameworkProject.release.xcconfig"; path = "Target Support Files/Pods-MyCustomFrameworkProject/Pods-MyCustomFrameworkProject.release.xcconfig"; sourceTree = "<group>"; };
 		ED45B0EA2F91BA15E325EFF0 /* Pods_MyCustomFrameworkProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCustomFrameworkProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD83AD36F442617ECCD616D9 /* Pods-MyCustomFrameworkProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCustomFrameworkProjectTests.release.xcconfig"; path = "Target Support Files/Pods-MyCustomFrameworkProjectTests/Pods-MyCustomFrameworkProjectTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -172,6 +176,8 @@
 				BD16FC802C2DD7AC005CE769 /* PhoneCallViewController.swift */,
 				BD16FC842C2DEC7D005CE769 /* DetectDeviesViewController.swift */,
 				BD21B8122C2DCE1200DCAD03 /* Main.storyboard */,
+				BD56A9742C2E47FB0041131C /* AddEmployeeViewController.swift */,
+				BD56A9722C2E46010041131C /* ShortCutViewController.swift */,
 				BD56A96E2C2E27F60041131C /* WebViewViewController.swift */,
 				BD56A9702C2E2CEA0041131C /* WenScrapingViewController.swift */,
 				BD21B8152C2DCE1300DCAD03 /* Assets.xcassets */,
@@ -440,9 +446,11 @@
 			files = (
 				BD21B8112C2DCE1200DCAD03 /* ViewController.swift in Sources */,
 				BD56A9712C2E2CEA0041131C /* WenScrapingViewController.swift in Sources */,
+				BD56A9732C2E46010041131C /* ShortCutViewController.swift in Sources */,
 				BD16FC812C2DD7AC005CE769 /* PhoneCallViewController.swift in Sources */,
 				BD16FC852C2DEC7D005CE769 /* DetectDeviesViewController.swift in Sources */,
 				BD21B80D2C2DCE1200DCAD03 /* AppDelegate.swift in Sources */,
+				BD56A9752C2E47FB0041131C /* AddEmployeeViewController.swift in Sources */,
 				BD56A96F2C2E27F60041131C /* WebViewViewController.swift in Sources */,
 				BD21B80F2C2DCE1200DCAD03 /* SceneDelegate.swift in Sources */,
 			);

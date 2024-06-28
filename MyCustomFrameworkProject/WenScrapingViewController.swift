@@ -10,11 +10,8 @@ import SwiftSoup
 
 class WenScrapingViewController: UIViewController {
 
-    
     @IBOutlet weak var titleLabel: UILabel!
-    
     @IBOutlet weak var bodyTextView: UITextView!
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()

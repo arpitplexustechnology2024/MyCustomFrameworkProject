@@ -1,25 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>UIApplicationSceneManifest</key>
-	<dict>
-		<key>UIApplicationSupportsMultipleScenes</key>
-		<false/>
-		<key>UISceneConfigurations</key>
-		<dict>
-			<key>UIWindowSceneSessionRoleApplication</key>
-			<array>
-				<dict>
-					<key>UISceneConfigurationName</key>
-					<string>Default Configuration</string>
-					<key>UISceneDelegateClassName</key>
-					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
-					<key>UISceneStoryboardFile</key>
-					<string>Main</string>
-				</dict>
-			</array>
-		</dict>
-	</dict>
-</dict>
+    <dict>
+        <key>UIApplicationShortcutItems</key>
+        <array>
+            <dict>
+                <key>UIApplicationShortcutItemIconType</key>
+                <string>UIApplicationShortcutIconTypeSearch</string>
+                <key>UIApplicationShortcutItemTitle</key>
+                <string>Search</string>
+                <key>UIApplicationShortcutItemType</key>
+                <string>SearchAction</string>
+            </dict>
+            
+            <dict>
+                <key>UIApplicationShortcutItemIconType</key>
+                <string>UIApplicationShortcutIconTypeShare</string>
+                <key>UIApplicationShortcutItemTitle</key>
+                <string>Share</string>
+                <key>UIApplicationShortcutItemType</key>
+                <string>ShareAction</string>
+            </dict>
+            
+            <dict>
+                <key>UIApplicationShortcutItemIconType</key>
+                <string>UIApplicationShortcutIconTypeFavorite</string>
+                <key>UIApplicationShortcutItemTitle</key>
+                <string>Favorite</string>
+                <key>UIApplicationShortcutItemType</key>
+                <string>FavoriteAction</string>
+            </dict>
+            
+            <dict>
+                <key>UIApplicationShortcutItemIconFile</key>
+                <string>Employee</string>
+                <key>UIApplicationShortcutItemTitle</key>
+                <string>Add Employee</string>
+                <key>UIApplicationShortcutItemType</key>
+                <string>EmployeeAction</string>
+            </dict>
+            
+        </array>
+        
+        <key>UIApplicationSceneManifest</key>
+        <dict>
+            <key>UIApplicationSupportsMultipleScenes</key>
+            <false/>
+            <key>UISceneConfigurations</key>
+            <dict>
+                <key>UIWindowSceneSessionRoleApplication</key>
+                <array>
+                    <dict>
+                        <key>UISceneConfigurationName</key>
+                        <string>Default Configuration</string>
+                        <key>UISceneDelegateClassName</key>
+                        <string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+                        <key>UISceneStoryboardFile</key>
+                        <string>Main</string>
+                    </dict>
+                </array>
+            </dict>
+        </dict>
+    </dict>
 </plist>
